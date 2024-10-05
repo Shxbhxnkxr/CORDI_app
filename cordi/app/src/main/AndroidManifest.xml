@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cordi">
+
+    <!-- Permissions to access health data -->
+    <uses-permission android:name="android.permission.BIND_HEALTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Optional: if you want to access the camera for capturing health-related data -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cordi">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PatientRegistrationActivity" />
+        <activity android:name=".ObserverRegistrationActivity" />
+        <activity android:name=".ChatBotActivity" />
+        <activity android:name=".PatientLoginActivity" />
+
+        <!-- Health Connect specific metadata -->
+        <meta-data
+            android:name="androidx.health.data.HEALTH_CONNECT_API_VERSION"
+            android:value="1.0" />
+
+    </application>
+</manifest>

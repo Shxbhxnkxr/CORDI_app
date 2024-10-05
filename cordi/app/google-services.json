@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "385537307027",
+    "project_id": "cordi-5845a",
+    "storage_bucket": "cordi-5845a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385537307027:android:a7c47b02d120a76f0a3866",
+        "android_client_info": {
+          "package_name": "com.example.cordi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8B-K_45lKJWw_wHOfk5OmPZxcJ14yMNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
